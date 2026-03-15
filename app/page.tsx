@@ -10,6 +10,8 @@ const questions = [
       { label: "Before the sun's fully up — coffee is my alarm clock", personality: "Cozy Classic" },
       { label: "Mid-morning, once I've caught up with everyone", personality: "Social Butterfly" },
       { label: "After my workout — fuel up, then caffeinate", personality: "Health Nut" },
+      { label: "Whenever I've had time to properly grind and brew", personality: "Deep Dive Purist" },
+      { label: "Around 2pm — it's basically a second morning for me", personality: "Afternoon Wanderer" },
     ],
   },
   {
@@ -18,6 +20,8 @@ const questions = [
       { label: "Quiet corner, a good book, familiar mug in hand", personality: "Cozy Classic" },
       { label: "Around a big table with friends, catching up", personality: "Social Butterfly" },
       { label: "Standing at the counter between tasks — efficient", personality: "Health Nut" },
+      { label: "Alone, nose-deep in tasting notes, full attention on the cup", personality: "Deep Dive Purist" },
+      { label: "A slow window seat, watching the street, nowhere to be", personality: "Afternoon Wanderer" },
     ],
   },
   {
@@ -26,6 +30,8 @@ const questions = [
       { label: "Black or with a splash of cream — nothing fancy", personality: "Cozy Classic" },
       { label: "Whatever sounds fun on the menu today", personality: "Social Butterfly" },
       { label: "Oat milk, no syrup — I know what I want", personality: "Health Nut" },
+      { label: "Black, always — anything else masks the flavor", personality: "Deep Dive Purist" },
+      { label: "A latte with a little something sweet — I'm treating myself", personality: "Afternoon Wanderer" },
     ],
   },
   {
@@ -34,6 +40,8 @@ const questions = [
       { label: "I have a regular order and my barista knows it", personality: "Cozy Classic" },
       { label: "My favorite place to meet up with people", personality: "Social Butterfly" },
       { label: "A quick stop before I get where I'm going", personality: "Health Nut" },
+      { label: "I only go to ones I've researched — sourcing matters", personality: "Deep Dive Purist" },
+      { label: "A refuge. I linger longer than I probably should", personality: "Afternoon Wanderer" },
     ],
   },
   {
@@ -42,6 +50,8 @@ const questions = [
       { label: "Warm lighting, worn leather chairs, slow music", personality: "Cozy Classic" },
       { label: "Buzzy and social — I love a bit of noise", personality: "Social Butterfly" },
       { label: "Clean, bright, efficient — get in, get out", personality: "Health Nut" },
+      { label: "Minimal, serious, smell of fresh grounds — like a lab", personality: "Deep Dive Purist" },
+      { label: "Relaxed and unhurried — time moves differently here", personality: "Afternoon Wanderer" },
     ],
   },
   {
@@ -50,6 +60,8 @@ const questions = [
       { label: "My usual — same thing every time, no hesitation", personality: "Cozy Classic" },
       { label: "The seasonal special — let's try something new", personality: "Social Butterfly" },
       { label: "An americano with oat milk — light and clean", personality: "Health Nut" },
+      { label: "Whatever single origin they have on pour-over today", personality: "Deep Dive Purist" },
+      { label: "A cortado — small, rich, something to savor slowly", personality: "Afternoon Wanderer" },
     ],
   },
 ];
@@ -66,6 +78,14 @@ const personalities: Record<string, { coffee: string; tagline: string }> = {
   "Health Nut": {
     coffee: "Oat Milk Americano",
     tagline: "You're intentional about what goes in your body — and your schedule.",
+  },
+  "Deep Dive Purist": {
+    coffee: "Single Origin Pour-Over",
+    tagline: "Coffee isn't a habit for you — it's a practice. You taste what others miss.",
+  },
+  "Afternoon Wanderer": {
+    coffee: "Cortado",
+    tagline: "You treat the afternoon like a second chance at the day. Coffee is how you arrive.",
   },
 };
 
